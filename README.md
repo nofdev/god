@@ -21,5 +21,10 @@ python god.py -c god-apache.conf > /dev/null 2>&1 &
 python god.py -c god-nginx.conf > /dev/null 2>&1 &
 ```
 
+* Add God to rc.local
+```
+echo 'python god.py -c god-apache.conf > /dev/null 2>&1 &' >> /etc/rc.local
+```
+
 ### Author
 jiasir(Taio Jia) <jiasir@icloud.com>
