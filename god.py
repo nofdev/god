@@ -11,10 +11,10 @@ config_file = ConfigParser.RawConfigParser()
 option_c = sys.argv[2]
 config_file.read('%s' % option_c)
 
-logLevel = config_file.get('logging', 'log_level')
+log_level = config_file.get('logging', 'log_level')
 
 logger = logging.getLogger('god')
-logging.basicConfig(filename='/var/log/god.log', level=logging.getLevelName(logLevel),
+logging.basicConfig(filename='/var/log/god.log', level=logging.getLevelName(log_level),
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 service_name = config_file.get('service', 'name')
