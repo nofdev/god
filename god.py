@@ -7,7 +7,7 @@ import time
 import logging
 import ConfigParser
 
-config_file = ConfigParser.RawConfigParser(allow_no_value=True)
+config_file = ConfigParser.RawConfigParser()
 option_c = sys.argv[2]
 config_file.read('%s' % option_c)
 
