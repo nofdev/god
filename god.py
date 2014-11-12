@@ -40,7 +40,7 @@ def main():
             print "Error", sys.exc_info()[1]
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     if len(sys.argv) == 3 and sys.argv[1] == '-c':
         main()
     else:
