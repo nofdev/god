@@ -12,18 +12,18 @@ vi god.conf
 
 * Running god daemon as background
 ```
-python god.py -c god.conf > /dev/null 2>&1 &
+nohup python god.py -c god.conf > /dev/null 2>&1 &
 ```
 
 * You can run the multiprocess
 ```
-python god.py -c god-apache.conf > /dev/null 2>&1 &
-python god.py -c god-nginx.conf > /dev/null 2>&1 &
+nohup python god.py -c god-apache.conf > /dev/null 2>&1 &
+nohup python god.py -c god-nginx.conf > /dev/null 2>&1 &
 ```
 
 * Add God to rc.local
 ```
-echo 'python god.py -c god-apache.conf > /dev/null 2>&1 &' >> /etc/rc.local
+echo 'nohup python god.py -c god-apache.conf > /dev/null 2>&1 &' >> /etc/rc.local
 ```
 
 ### Author
