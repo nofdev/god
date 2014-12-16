@@ -1,7 +1,7 @@
 god
 ===
 
-God is a daemon guard that to check whether normal operation process
+God is a process manager that to check whether normal operation process
 
 
 ### How to use?
